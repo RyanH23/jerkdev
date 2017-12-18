@@ -7,17 +7,17 @@ html{
 
 @font-face{
   font-family: WirewyrmRegular;
-  src: url("../fonts/wirewyrm medium.woff");
+  src: url("../fonts/wirewyrmmedium.woff");
 }
 
 @font-face{
   font-family: WirewyrmLight;
-  src: url("../fonts/wirewyrm light.woff");
+  src: url("../fonts/wirewyrmlight.woff");
 }
 
 @font-face{
   font-family: WirewyrmItalic;
-  src: url("../fonts/wirewyrm italic.woff");
+  src: url("../fonts/wirewyrmitalic.woff");
 }
 
 h1, h2, h3{
@@ -45,6 +45,7 @@ h4{
 }
 
 header{
+  font-family: wirewyrmlight;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -64,7 +65,7 @@ nav{
 
 header a{
   color: white;
-  margin: 0 1.25rem;
+  margin: 0 0.5rem;
 }
 
 
@@ -78,23 +79,21 @@ header a{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 91vh;
-  opacity: 0.9;
+  height: 100vh;
   position: relative;
-  top: -3.68rem;
 }
 
 .welcome{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     flex-wrap: nowrap;
-    position: relative;
-    margin: 0 auto;
     color: white;
-    top: 68vh;
     width: 100%;
+    height: 100%;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .welcome h1{
@@ -106,6 +105,10 @@ header a{
   margin-bottom: 0.75rem;
 }
 
+.welcome span{
+  margin-bottom: 5rem;
+}
+
 .gallery{
     display: flex;
     flex-wrap: nowrap;
@@ -113,15 +116,13 @@ header a{
     height: 45rem;
     background: white;
     position: relative;
-    top: -3.68rem;
 }
 
 .galleryrow{
   display: flex;
   flex-wrap: nowrap;
   height: 50%;
-  border-top: solid white 0.125rem;
-  border-bottom: solid white 0.125rem;
+  
 }
 
 .galleryimage{
@@ -180,7 +181,6 @@ header a{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  top: -3.68rem;
 }
 .partnersmessege {
 
@@ -190,4 +190,40 @@ header a{
   background: black;
   height: 60rem;
   top: -3.68rem;
+}
+
+
+
+.imagecontainer img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.imagecontainer:hover img{
+   opacity: 0.3;
+}
+
+.imagecontainer .middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.imagecontainer:hover .middle{
+  opacity: 1;
+}
+
+.middle h2{
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
