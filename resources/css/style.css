@@ -44,6 +44,16 @@ h4{
   font-size: 1.5rem;
 }
 
+.button{
+    border: solid white 1px;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+.button:hover{
+  background-color: #C49FBA;
+}
+
 header{
   font-family: wirewyrmlight;
   position: fixed;
@@ -66,6 +76,10 @@ nav{
 header a{
   color: white;
   margin: 0 0.5rem;
+}
+
+nav a:hover{
+  border-bottom: solid white 1px;
 }
 
 
@@ -105,8 +119,10 @@ header a{
   margin-bottom: 0.75rem;
 }
 
-.welcome span{
+.welcome a{
   margin-bottom: 5rem;
+  color: white;
+  font-family: wirewyrmlight;
 }
 
 .gallery{
@@ -186,7 +202,7 @@ header a{
 .partners{
   display: flex;
   align-items: center;
-  height: 30rem;
+  height: 22rem;
   background-image: url("../images/04CB15DB-AA65-40BB-9D96-0394ADE26907.jpeg");
 /*  background-color: #C49FBA; */
   background-attachment: fixed;
@@ -196,7 +212,20 @@ header a{
 }
 
 .partnersmessege {
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.2);
+}
 
+.partnersmessege a{
+  color: white;
+  margin-top: 2rem;
+  font-family: wirewyrmlight;
 }
 
 .instagram{
