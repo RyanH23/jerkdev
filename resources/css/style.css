@@ -1,7 +1,7 @@
 /*#C49FBA*/
 html{
   font-size: 18px;
-  background-color: black;
+  background-color: rgba(240, 248, 255, 0);
   z-index: 10;
 }
 
@@ -60,6 +60,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
   height: 4.5rem;
   background-color: black;
@@ -229,18 +230,83 @@ nav a:hover{
 }
 
 .instagram{
-  background: black;
-  height: 60rem;
-  top: -3.68rem;
+  text-align: center;
 }
 
-.imagecontainer:hover .middle{
-  opacity: 1;
+.instagram a{
+  border-bottom: solid black 1px;
 }
 
-.middle h2{
-  background-color: rgba(0, 0, 0, 0.0);
+.instagram a:hover{
+  color: #C49FBA;
+}
+
+.instagram h2, .instagram h3{
+    margin: 1rem auto;
+}
+
+.insta-gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.insta-pic{
+  height:22vw;
+  width: 22vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5vw;
+}
+
+#insta-one{
+  background-image: url("https://www.instagram.com/p/BcR9wMPFiwF/media");
+
+}
+
+#insta-two{
+  background-image: url("https://www.instagram.com/p/BbC9ivTl5f7/media");
+}
+
+#insta-three{
+  background-image: url("https://www.instagram.com/p/BbKqKKSFJN-/media");
+}
+
+#insta-four{
+  background-image: url("https://www.instagram.com/p/Ba9xWQMl42e/media");
+}
+
+#insta-five{
+  background-image: url("https://www.instagram.com/p/Ba7bp8lF3v0/media");
+}
+
+#insta-six{
+  background-image: url("https://www.instagram.com/p/BawTxhnFWFT/media");
+}
+
+#insta-seven{
+  background-image: url("https://www.instagram.com/p/BVsFOOsl2Gc/media");
+}
+
+#insta-eight{
+  background-image: url("https://www.instagram.com/p/BVn9Ps3F4di/media");
+}
+
+footer{
+  background-color: black;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  height: 10rem;
+}
+
+footer a{
+  color: white;
+}
+
+footer .close{
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  color: white;
+  background-color: black;
 }
