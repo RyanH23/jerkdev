@@ -1,7 +1,7 @@
 /*#C49FBA*/
 html{
   font-size: 18px;
-  background-color: rgba(240, 248, 255, 0);
+  background-color: white;
   z-index: 10;
 }
 
@@ -44,6 +44,12 @@ h4{
   font-size: 1.5rem;
 }
 
+.button-nav{
+    border: solid #C49FBA 1px;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
 .button{
     border: solid white 1px;
     border-radius: 0.2rem;
@@ -51,6 +57,10 @@ h4{
 }
 
 .button:hover{
+  background-color: #C49FBA;
+}
+
+.button-nav:hover{
   background-color: #C49FBA;
 }
 
@@ -63,9 +73,9 @@ header{
   flex-wrap: nowrap;
   width: 100%;
   height: 4.5rem;
-  background-color: black;
+  background-color: white;
   color: white;
-  opacity: 0.85;
+  opacity: 0.95;
   z-index: 100;
   top: 0;
 }
@@ -75,12 +85,12 @@ nav{
 }
 
 header a{
-  color: white;
+  color: black;
   margin: 0 0.5rem;
 }
 
 nav a:hover{
-  border-bottom: solid white 1px;
+  border-bottom: solid black 1px;
 }
 
 
@@ -89,7 +99,7 @@ nav a:hover{
 }
 
 .jumbotron{
-  background-image: url("../images/78AA5157-CD69-4CC0-8FED-F3EF371EDAF3.jpeg");
+  background-image: url("../images/DE6E94D7-4A0A-41A3-B42C-A405B022810A.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,7 +118,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(240, 248, 255, 0.1);
 }
 
 .welcome h1{
@@ -121,7 +131,7 @@ nav a:hover{
 }
 
 .welcome a{
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   color: white;
   font-family: wirewyrmlight;
 }
@@ -165,7 +175,7 @@ nav a:hover{
 }
 
 #newbox{
-  background-image: url("../images/newboxfood.jpg");
+  background-image: url("../images/IMG_9124.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -177,13 +187,13 @@ nav a:hover{
   background-image: url("../images/chickenongrill.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   width: 61%;
   border-left: solid white 0.0625rem;
 }
 
 #lineatthemarket{
-  background-image: url("../images/lineatthemarket.jpeg");
+  background-image: url("../images/transaction.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -205,7 +215,7 @@ nav a:hover{
   align-items: center;
   height: 22rem;
   width: 100%;
-  background-image: url("../images/04CB15DB-AA65-40BB-9D96-0394ADE26907.jpeg");
+  background-image: url("../images/C2E01F49-0ECC-4EF0-8907-DAD4160933DA.jpeg");
 /*  background-color: #C49FBA; */
   background-attachment: fixed;
   background-size: cover;
@@ -297,7 +307,7 @@ nav a:hover{
 
 footer{
   font-family: wirewyrmlight;
-  background-color: black;
+  background-color: #C49FBA;
   color: white;
   height: 12rem;
 }
@@ -323,7 +333,7 @@ footer .close{
   align-items: flex-end;
   text-align: right;
   color: white;
-  background-color: black;
+
   float: right;
   margin-right: 3rem;
 }
